@@ -11,30 +11,83 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
 
+    <!-- Google Fonts   -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .input-title {
+        width: 100px;
+        display: inline-block;
+      }
+    </style>
+
+    <!-- Google Fonts  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              berkshire: ["Berkshire Swash"],
+            },
+            colors: {
+              bestFive: "#FF5E19",
+              bodyColor: "#0D0D0D",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="bg-slate-900">
     <!-- header  -->
-    <header>
+    <header class="mb-10">
       <div
-        class="relative overflow-hidden bg-no-repeat bg-cover"
-        style="background-image: url('images/psg-banner.png'); height: 550px"
+        class="relative bg-no-repeat bg-cover"
+        style="background-image: url('images/psg-banner.png'); height: 480px"
       >
-        <h1 class="py-6 text-center font-bold text-6xl text-orange-600 pt-40">
-          Pick Your Favorite Five
-        </h1>
-        <img
-          src="images/Line Marker.png"
-          alt=""
-          class="absolute right-24 top-14 hidden lg:block"
-        />
-        <p class="text-white text-center text-xl">
-          There have been some great heroes in football, the most popular sport
-          in the world, who have gone above and <br />
-          beyond the call of duty to leave a lasting legacy in the hearts and
-          minds of football supporters.
-        </p>
+        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full">
+          <div
+            class="flex items-center h-full w-11/12 lg:w-7/12 mx-auto text-center"
+          >
+            <div class="lg:text-center text-white px-6 md:px-12">
+              <div class="heading relative">
+                <h1
+                  class="text-5xl font-bold mt-0 mb-10 text-bestFive font-berkshire"
+                >
+                  Pick Your Favorite Players
+                </h1>
+                <img
+                  src="images/Line Marker.png"
+                  alt=""
+                  class="absolute right-24 top-14 hidden lg:block"
+                />
+              </div>
+              <h3 class="mb-8">
+                There have been some great heroes in football, the most popular
+                sport in the world, who have gone above and <br />
+                beyond the call of duty to leave a lasting legacy in the hearts
+                and minds of football supporters.
+              </h3>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- main  -->
@@ -62,9 +115,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -86,9 +139,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -110,9 +163,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -138,9 +191,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -166,9 +219,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -192,9 +245,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -220,9 +273,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -248,9 +301,9 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
@@ -276,16 +329,102 @@
                   </p>
                   <button
                     type="button"
-                    class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class="inline-block px-12 py-2.5 bg-blue-600 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Button
+                    SELECT
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- selection and calculation  -->
+
+        <div class="selected-player-list order-1 md:order-none">
+          <!-- selected list -->
+          <div class="bg-black h-80 pt-4 text-white mb-10 px-8">
+            <h1 class="text-center border-b-4 pb-2 mb-4 text-3xl text-semibold">
+              Selected-V
+            </h1>
+            <ol class="list-decimal px-10" id="selected-player">
+              <!-- ... -->
+            </ol>
+          </div>
+          <!-- Calculate Total Expense  -->
+          <div class="bg-black pt-4 text-white mb-10 px-8">
+            <h1 class="text-center border-b-4 pb-2 mb-4 text-3xl text-semibold">
+              Budget
+            </h1>
+            <p class="mb-4">
+              <span class="input-title text-xl">Per Player </span
+              ><input
+                type="text"
+                name=""
+                class="w-28 bg-transparent border-2"
+                id="per-player-expense"
+                required
+              />
+            </p>
+            <div class="text-center mb-4">
+              <button
+                type="button"
+                class="inline-block px-20 py-2 bg-blue-600 text-white font-medium text-xl leading-tight uppercase w-full text-center"
+                id="btn-calculate"
+              >
+                Calculate
+              </button>
+            </div>
+
+            <p class="mb-4">
+              <span class="mr-8 text-2xl">Player Expenses: </span> $<span
+                id="player-expense"
+              ></span>
+            </p>
+
+            <p class="mb-4">
+              <span class="input-title text-xl">Manager</span
+              ><input
+                type="text"
+                name=""
+                id="manager-expense"
+                class="w-28 bg-transparent border-2"
+                required
+              />
+            </p>
+
+            <p class="mb-4">
+              <span class="input-title text-xl">Coach</span
+              ><input
+                type="text"
+                name=""
+                id="coach-expense"
+                class="w-28 bg-transparent border-2"
+                required
+              />
+            </p>
+
+            <div class="text-center mb-4">
+              <button
+                type="button"
+                class="inline-block px-10 py-2 bg-blue-600 text-white font-medium text-xl leading-tight uppercase w-full"
+                id="btn-calculate-total"
+              >
+                Calculate Total
+              </button>
+            </div>
+
+            <p class="pb-4">
+              <span class="mr-8 text-xl">Total Expenses: </span>$<span
+                id="total-expense"
+              ></span>
+            </p>
+          </div>
+        </div>
       </section>
+      <hr class="border-2" />
+      <footer class="text-center py-10 bg-black text-white">
+        <p>Copyright @ 2022 All Rights Reserved.</p>
+      </footer>
     </main>
   </body>
 </html>
